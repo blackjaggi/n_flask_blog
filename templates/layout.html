@@ -5,6 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://kit.fontawesome.com/ab0e3be1cc.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
     {% block title %}
@@ -24,6 +26,29 @@
 <div class="wrapper">
 
 {% block menu %}
+    <header>
+       <nav>
+                    <input type="checkbox" id="checkbox-menu">
+                    <label for="checkbox-menu">
+                        <ul class="menu touch">
+
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Регистрация</a></li>
+            <li><a href="#">Логин</a></li>
+            <li><a href="#">Аккаунт</a></li>
+            <li><a href="#">Создать</a></li>
+            <li><a href="#">Выход</a></li>
+                      </ul>
+            <span class="toggle">☰</span>
+            </label>
+
+
+                </nav>
+
+    </header>
+     <script src="script.js"></script>
+
 
 {% endblock menu %}
 
@@ -35,14 +60,19 @@
 
 {% block main_page %}
 
+
 {% endblock main_page %}
 
+   <div class="content">
 
+   </div>
 {% block footer %}
-
+    <footer class="footer">
+        Все права защищены!<br>
+        &#169; Blackjaggi 2022
+    </footer>
 {% endblock footer %}
 
 </div>
-
 </body>
 </html>

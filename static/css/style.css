@@ -1,7 +1,7 @@
-h1 {
-color: #d72e24;
-}
-.wrapper {
-outline: 1px orange solid;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&subset=cyrillic');
+@import url('core.css');
+@import url('blocks/menu.css');
+@import url('blocks/content.css');
+@import url('blocks/footer.css');
 
-}
